@@ -5,7 +5,6 @@ import connectDB from "./config/db.js";
 import contactRoutes from "./routes/contactRoutes.js";
 import cookieParser from "cookie-parser";
 import authRoutes from "./routes/authRoutes.js";
-import Admin from "./models/Admin.js";
 
 // Load env vars
 dotenv.config({ path: "./.env" });
