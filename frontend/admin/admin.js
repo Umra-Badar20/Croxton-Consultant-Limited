@@ -51,7 +51,7 @@ createApp({
     },
     async fetchMessages() {
       try {
-        const response = await axios.get('https://croxton-consultant-limited.vercel.app/contact.html', {
+        const response = await axios.get('https://croxton-consultant-limited-production.up.railway.app/api/contact', {
           headers: {
             'Authorization': `Bearer ${this.token}`
           }
