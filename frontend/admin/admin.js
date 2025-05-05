@@ -1,5 +1,3 @@
-import Swal from 'sweetalert2';
-
 const { createApp } = Vue;
 
 createApp({
