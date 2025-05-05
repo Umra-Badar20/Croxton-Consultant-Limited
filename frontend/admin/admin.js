@@ -34,7 +34,7 @@ createApp({
   methods: {
     async login() {
       try {
-        const response = await axios.post('https://croxton-consultant-limited.vercel.app/admin/index.html', this.loginData);
+        const response = await axios.post('https://croxton-consultant-limited-production.up.railway.app/api/auth/login', this.loginData);
         this.token = response.data.token;
         localStorage.setItem('token', this.token);
         this.authenticated = true;
