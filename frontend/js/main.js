@@ -159,6 +159,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+//More countries button
+document.addEventListener('DOMContentLoaded', function() {
+    const moreCountriesButtons = document.querySelectorAll('.btn.btn-primary.border-secondary.rounded-pill.py-3.px-5.wow.fadeInUp');
+
+    moreCountriesButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const nextRow = this.closest('.row').nextElementSibling;
+            if (nextRow) {
+                nextRow.style.display = 'flex';
+            }
+        });
+    });
+});
+
     // Initiate the wowjs
     new WOW().init();
 
